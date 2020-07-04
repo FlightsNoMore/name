@@ -127,7 +127,7 @@ commands.gay = function()
 end
 
 commands.help = function()
-    chat("!ask [Question] | !projectbot | !help | !edgyjoke | !fact | !ppsize | !discourd | !quote | !opinion | !dadjoke | !howgay | !flipacoin | !lovecalc [name] [name]")
+    chat("!ask [Question] | !help | !morecommands | !edgyjoke | !ppsize | !discourd | !howgay | !flipacoin | !lovecalc [name] [name]")
     wait(0.5)
 end
 
@@ -154,6 +154,10 @@ commands.love = function()
     chat(ans[math.random(#ans)])
 end
  
+commands.morecmds = function()
+    chat(" !quote | !opinion | !dadjoke | !fact | !projectbot ")
+    wait(0.5)
+end
 
 --Message commands fuck off you skid
 onPlayerChat = function(chat_type,recipient,message)
@@ -185,6 +189,8 @@ onPlayerChat = function(chat_type,recipient,message)
         commands.flip(recipient,message)
     elseif message:match(".*!lovecalc.*") then
         commands.love(recipient,message)
+    elseif message:match(".*!morecommands.*") then
+        commands.morecmds(recipient,message)
     end
 end
 

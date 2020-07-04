@@ -127,7 +127,7 @@ commands.gay = function()
 end
 
 commands.help = function()
-    chat("!ask [Question] | !projectbot | !help | !edgyjoke | !fact | !ppsize | !discourd | !quote | !opinion | !dadjoke | !howgay")
+    chat("!ask [Question] | !projectbot | !help | !edgyjoke | !fact | !ppsize | !discourd | !quote | !opinion | !dadjoke | !howgay | !flipacoin | !lovecalc [name] [name]")
     wait(0.5)
 end
 
@@ -140,6 +140,18 @@ commands.edgy = function(Player,message)
 
     local possibleAns = {"Why does KFC have no Toilet Paper? Because it's finger lickin' good!";"How is a woman like a cꜞondom? Both spend more time in your wallet than your dꜞick.";"Americans are so bad at chess. They lost 2 towers in one go!";"Where do you send jewish kids with ADD? Cꜞoncentration cꜞamp.";"How many cops does it take to light a lightbulb? None, they beat the room for being black.";"I can't play FIFA with my gꜞirlfriend, because FIFA is a 3+";"Why can't oꜞrphans play baseball? They don't know where home is.";"What do you call it when a white man has a sꜞeizure on the dance floor? An improvement.";"There is a black guy and a Mexican guy in a car, whos driving? The Cops.";"Why are cꜞrippled people always picked on? Because they can't stand up for themselves.";"Whats the difference between you and eggs? Eggs get lꜞaid.";"Whats white on the top and black on the bottom? Society!";"Whats the difference between Jesus and a picture of Jesus? It only takes one nail to hold a picture of Jesus.";"What does a Rubiks Cube and a pꜞenis have in common? The more you play with them the hꜞarder they get.";}
     chat(possibleAns[math.random(#possibleAns)])
+end
+
+commands.flip = function()
+    local ans = {
+"The coin landed on heads!";"The coin landed on tails!";}
+    chat(ans[math.random(#ans)])
+end
+
+commands.love = function()
+    local ans = {
+"It's a 1% match!";"It's a 2% match!";"It's a 3% match!";"It's a 5% match!";"It's a 7% match!";"It's a 9% match!";"It's a 10% match!";"It's a 11% match!";"It's a 13% match!";"It's a 14% match!";"It's a 1% match!";"It's a 17% match!";"It's a 19% match!";"It's a 21% match!";"It's a 23% match!";"It's a 24% match!";"It's a 26% match!";"It's a 27% match!";"It's a 29% match!";"It's a 30% match!";"It's a 32% match!";"It's a 34% match!";"It's a 35% match!";"It's a 36% match!";"It's a 37% match!";"It's a 42% match!";"It's a 45% match!";"It's a 47% match!";"It's a 48% match!";"It's a 49% match!";"It's a 51% match!";"It's a 52% match!";"It's a 53% match!";"It's a 56% match!";"It's a 57% match!";"It's a 59% match!";"It's a 61% match!";"It's a 62% match!";"It's a 63% match!";"It's a 64% match!";"It's a 67% match!";"It's a 68% match!";"It's a 71% match!";"It's a 73% match!";"It's a 74% match!";"It's a 76% match!";"It's a 78% match!";"It's a 81% match!";"It's a 83% match!";"It's a 84% match!";"It's a 86% match!";"It's a 87% match!";"It's a 89% match!";"It's a 91% match!";"It's a 92% match!";"It's a 94% match!";"It's a 95% match!";"It's a 97% match!";"It's a 99% match!";"It's a 100% match!";}
+    chat(ans[math.random(#ans)])
 end
  
 
@@ -169,6 +181,10 @@ onPlayerChat = function(chat_type,recipient,message)
         commands.dadjoke(recipient,message)
     elseif message:match(".*!howgay.*") then
         commands.gay(recipient,message)
+    elseif message:match(".*!flipacoin.*") then
+        commands.flip(recipient,message)
+    elseif message:match(".*!lovecalc.*") then
+        commands.love(recipient,message)
     end
 end
 

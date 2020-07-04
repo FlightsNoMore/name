@@ -110,7 +110,7 @@ commands.opinions = function()
 end
 
 commands.help = function()
-    chat("!ask [Question] | !projectbot | !help | !edgyjoke | !fact | !ppsize | !discourd | !quote | !opinion | !dadjoke | !howgay")
+    chat("!ask [Question] | !projectbot | !help | !edgyjoke | !fact | !discourd | !quote | !opinion | !dadjoke")
     wait(0.5)
 end
 

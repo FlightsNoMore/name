@@ -1,5 +1,5 @@
--- skiddy
--- skid
+-- yeah
+-- nice
 
 -- Instances:
 
@@ -10,6 +10,7 @@ local Title = Instance.new("TextLabel")
 local YouAreUsingLabel = Instance.new("TextLabel")
 local Welcome = Instance.new("TextLabel")
 local ContinueButton = Instance.new("TextButton")
+local KeyBox = Instance.new("TextBox")
 local MainFrame = Instance.new("Frame")
 local Design = Instance.new("Frame")
 local Frame = Instance.new("Frame")
@@ -17,7 +18,6 @@ local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local ListButtons = Instance.new("Frame")
 local VERYIRRELEVANT = Instance.new("Frame")
-local SocialsButton = Instance.new("TextButton")
 local ScriptTabButton = Instance.new("TextButton")
 local RulesTabButton = Instance.new("TextButton")
 local CreditsTabButton = Instance.new("TextButton")
@@ -30,19 +30,21 @@ local Frame_2 = Instance.new("Frame")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
-local RulesTab = Instance.new("Frame")
 local TextLabel_6 = Instance.new("TextLabel")
 local TextLabel_7 = Instance.new("TextLabel")
+local RulesTab = Instance.new("Frame")
 local TextLabel_8 = Instance.new("TextLabel")
 local TextLabel_9 = Instance.new("TextLabel")
-local CreditsTab = Instance.new("Frame")
 local TextLabel_10 = Instance.new("TextLabel")
 local TextLabel_11 = Instance.new("TextLabel")
+local CreditsTab = Instance.new("Frame")
 local TextLabel_12 = Instance.new("TextLabel")
 local TextLabel_13 = Instance.new("TextLabel")
-local SocialsTab = Instance.new("Frame")
 local TextLabel_14 = Instance.new("TextLabel")
 local TextLabel_15 = Instance.new("TextLabel")
+local SocialsTab = Instance.new("Frame")
+local TextLabel_16 = Instance.new("TextLabel")
+local TextLabel_17 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -60,6 +62,9 @@ WelcomeFrame.Image = "rbxassetid://2260492396"
 WelcomeFrame.ImageColor3 = Color3.fromRGB(34, 33, 36)
 WelcomeFrame.ScaleType = Enum.ScaleType.Slice
 WelcomeFrame.SliceCenter = Rect.new(4, 4, 5, 5)
+WelcomeFrame.Active = true
+WelcomeFrame.Selectable = true
+WelcomeFrame.Draggable = true
 
 Bar.Name = "Bar"
 Bar.Parent = WelcomeFrame
@@ -90,7 +95,7 @@ YouAreUsingLabel.BorderColor3 = Color3.fromRGB(18, 18, 18)
 YouAreUsingLabel.Position = UDim2.new(0.33765313, 0, 0.507898986, 0)
 YouAreUsingLabel.Size = UDim2.new(0, 175, 0, 29)
 YouAreUsingLabel.Font = Enum.Font.GothamBold
-YouAreUsingLabel.Text = "You are using the free version of Project BOT, enjoy!"
+YouAreUsingLabel.Text = "You are using the payed version of Project BOT, enjoy!"
 YouAreUsingLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 YouAreUsingLabel.TextSize = 20.000
 
@@ -111,26 +116,105 @@ ContinueButton.Parent = WelcomeFrame
 ContinueButton.BackgroundColor3 = Color3.fromRGB(32, 31, 34)
 ContinueButton.BorderColor3 = Color3.fromRGB(45, 44, 48)
 ContinueButton.BorderSizePixel = 3
-ContinueButton.Position = UDim2.new(0.315498143, 0, 0.779310346, 0)
+ContinueButton.Position = UDim2.new(0.54428041, 0, 0.779310346, 0)
 ContinueButton.Size = UDim2.new(0, 200, 0, 26)
 ContinueButton.Font = Enum.Font.GothamBold
 ContinueButton.Text = "Continue"
 ContinueButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 ContinueButton.TextSize = 14.000
 ContinueButton.MouseButton1Down:connect(function()
-	WelcomeFrame.Visible = false
-	MainFrame.Visible = true
+if KeyBox.Text == "r3iorf4gniogj" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+		elseif KeyBox.Text == "r3iorf4gniogj" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "hn43ion3ionog" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "f3ifoehnfegjn" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "f3h28f48h2djl" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "uh89fh3qojioj" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "vgbeughy32jfb" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "ut329fjogj3rh" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "tiojgifgje2ik" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "3chi390j9r90j" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "rxn4urojcwj3r" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "hnoiv6vuj6jvj" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "4hi3fogjgoiwz" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "rh4ioch4iu4hd" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "rhocirrn4jijc" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "rc3uuhi32huhd" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "th5iuhtuv43i3" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "htioct3iojwot" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "5iocyhoihwihs" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "th4ictiooi32d" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "ch4iioho3jfio" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+				elseif KeyBox.Text == "chioh4t39h94c" then
+WelcomeFrame.Visible = false
+		MainFrame.Visible = true
+end
 end)
+
+KeyBox.Name = "KeyBox"
+KeyBox.Parent = WelcomeFrame
+KeyBox.BackgroundColor3 = Color3.fromRGB(32, 31, 34)
+KeyBox.BorderColor3 = Color3.fromRGB(45, 44, 48)
+KeyBox.BorderSizePixel = 3
+KeyBox.Position = UDim2.new(0.0885607675, 0, 0.779310346, 0)
+KeyBox.Size = UDim2.new(0, 199, 0, 26)
+KeyBox.Font = Enum.Font.GothamBold
+KeyBox.PlaceholderColor3 = Color3.fromRGB(245, 245, 246)
+KeyBox.PlaceholderText = "Key"
+KeyBox.Text = ""
+KeyBox.TextColor3 = Color3.fromRGB(252, 252, 252)
+KeyBox.TextSize = 14.000
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui
+MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(34, 33, 36)
 MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.0709677413, 0, 0.348605573, 0)
 MainFrame.Size = UDim2.new(0, 560, 0, 300)
 MainFrame.Visible = false
 MainFrame.Selectable = true
-MainFrame.Active = true
 MainFrame.Draggable = true
 
 Design.Name = "Design"
@@ -161,10 +245,10 @@ TextLabel_2.Parent = Design
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.794642866, 0, 0.176470593, 0)
-TextLabel_2.Size = UDim2.new(0, 115, 0, 28)
+TextLabel_2.Position = UDim2.new(0.773214281, 0, 0.176470593, 0)
+TextLabel_2.Size = UDim2.new(0, 127, 0, 28)
 TextLabel_2.Font = Enum.Font.GothamBold
-TextLabel_2.Text = "Paid Version: V1"
+TextLabel_2.Text = "Payed Version: V1"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 71, 71)
 TextLabel_2.TextSize = 14.000
 
@@ -181,18 +265,6 @@ VERYIRRELEVANT.BackgroundColor3 = Color3.fromRGB(255, 62, 62)
 VERYIRRELEVANT.BorderSizePixel = 0
 VERYIRRELEVANT.Position = UDim2.new(0, 0, -0.0075757578, 0)
 VERYIRRELEVANT.Size = UDim2.new(0, 127, 0, 2)
-
-SocialsButton.Name = "SocialsButton"
-SocialsButton.Parent = ListButtons
-SocialsButton.BackgroundColor3 = Color3.fromRGB(53, 51, 56)
-SocialsButton.BorderSizePixel = 0
-SocialsButton.Position = UDim2.new(0, 0, 0.844696939, 0)
-SocialsButton.Size = UDim2.new(0, 126, 0, 42)
-SocialsButton.Visible = false
-SocialsButton.Font = Enum.Font.GothamBlack
-SocialsButton.Text = "Socials/Credits"
-SocialsButton.TextColor3 = Color3.fromRGB(232, 232, 232)
-SocialsButton.TextSize = 14.000
 
 ScriptTabButton.Name = "ScriptTabButton"
 ScriptTabButton.Parent = ListButtons
@@ -295,7 +367,7 @@ StartScriptButton.Text = "Start Project BOT"
 StartScriptButton.TextColor3 = Color3.fromRGB(232, 232, 232)
 StartScriptButton.TextSize = 14.000
 StartScriptButton.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FlightsNoMore/name/master/fortnitevid",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FlightsNoMore/name/master/fortnitevideo",true))()
 end)
 
 Frame_2.Parent = StartScriptButton
@@ -336,6 +408,28 @@ TextLabel_5.Text = "Will probably never come lol."
 TextLabel_5.TextColor3 = Color3.fromRGB(165, 165, 165)
 TextLabel_5.TextSize = 15.000
 
+TextLabel_6.Parent = ScriptTab
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(-0.00230946881, 0, 0.575757682, 0)
+TextLabel_6.Size = UDim2.new(0, 433, 0, 94)
+TextLabel_6.Font = Enum.Font.GothamBlack
+TextLabel_6.Text = "Yes this UI is the same as the free version,"
+TextLabel_6.TextColor3 = Color3.fromRGB(165, 165, 165)
+TextLabel_6.TextSize = 15.000
+
+TextLabel_7.Parent = ScriptTab
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(-0.00230946881, 0, 0.63257587, 0)
+TextLabel_7.Size = UDim2.new(0, 433, 0, 97)
+TextLabel_7.Font = Enum.Font.GothamBlack
+TextLabel_7.Text = "but clicking on \"Start Project BOT, starts the payed script."
+TextLabel_7.TextColor3 = Color3.fromRGB(165, 165, 165)
+TextLabel_7.TextSize = 15.000
+
 RulesTab.Name = "RulesTab"
 RulesTab.Parent = Tabs
 RulesTab.BackgroundColor3 = Color3.fromRGB(34, 33, 36)
@@ -344,49 +438,49 @@ RulesTab.BorderSizePixel = 0
 RulesTab.Size = UDim2.new(0, 433, 0, 264)
 RulesTab.Visible = false
 
-TextLabel_6.Parent = RulesTab
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.BorderSizePixel = 0
-TextLabel_6.Position = UDim2.new(0, 0, 0.0719696954, 0)
-TextLabel_6.Size = UDim2.new(0, 433, 0, 50)
-TextLabel_6.Font = Enum.Font.GothamBlack
-TextLabel_6.Text = "RULES:"
-TextLabel_6.TextColor3 = Color3.fromRGB(232, 232, 232)
-TextLabel_6.TextSize = 25.000
-
-TextLabel_7.Parent = RulesTab
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.BorderSizePixel = 0
-TextLabel_7.Position = UDim2.new(0, 0, 0.212121218, 0)
-TextLabel_7.Size = UDim2.new(0, 433, 0, 50)
-TextLabel_7.Font = Enum.Font.GothamBlack
-TextLabel_7.Text = "No rules really, just don't make it obvious you arent a bot."
-TextLabel_7.TextColor3 = Color3.fromRGB(232, 232, 232)
-TextLabel_7.TextSize = 15.000
-
 TextLabel_8.Parent = RulesTab
 TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.BackgroundTransparency = 1.000
 TextLabel_8.BorderSizePixel = 0
-TextLabel_8.Position = UDim2.new(0, 0, 0.287878782, 0)
-TextLabel_8.Size = UDim2.new(0, 433, 0, 44)
+TextLabel_8.Position = UDim2.new(0, 0, 0.0719696954, 0)
+TextLabel_8.Size = UDim2.new(0, 433, 0, 50)
 TextLabel_8.Font = Enum.Font.GothamBlack
-TextLabel_8.Text = "Trying to take credit for Project BOT will result"
+TextLabel_8.Text = "RULES:"
 TextLabel_8.TextColor3 = Color3.fromRGB(232, 232, 232)
-TextLabel_8.TextSize = 15.000
+TextLabel_8.TextSize = 25.000
 
 TextLabel_9.Parent = RulesTab
 TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.BackgroundTransparency = 1.000
 TextLabel_9.BorderSizePixel = 0
-TextLabel_9.Position = UDim2.new(0, 0, 0.356060594, 0)
-TextLabel_9.Size = UDim2.new(0, 433, 0, 42)
+TextLabel_9.Position = UDim2.new(0, 0, 0.212121218, 0)
+TextLabel_9.Size = UDim2.new(0, 433, 0, 50)
 TextLabel_9.Font = Enum.Font.GothamBlack
-TextLabel_9.Text = "in a blacklist."
+TextLabel_9.Text = "No rules really, just don't make it obvious you arent a bot."
 TextLabel_9.TextColor3 = Color3.fromRGB(232, 232, 232)
 TextLabel_9.TextSize = 15.000
+
+TextLabel_10.Parent = RulesTab
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0, 0, 0.287878782, 0)
+TextLabel_10.Size = UDim2.new(0, 433, 0, 44)
+TextLabel_10.Font = Enum.Font.GothamBlack
+TextLabel_10.Text = "Trying to take credit for Project BOT will result"
+TextLabel_10.TextColor3 = Color3.fromRGB(232, 232, 232)
+TextLabel_10.TextSize = 15.000
+
+TextLabel_11.Parent = RulesTab
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0, 0, 0.356060594, 0)
+TextLabel_11.Size = UDim2.new(0, 433, 0, 42)
+TextLabel_11.Font = Enum.Font.GothamBlack
+TextLabel_11.Text = "in a blacklist."
+TextLabel_11.TextColor3 = Color3.fromRGB(232, 232, 232)
+TextLabel_11.TextSize = 15.000
 
 CreditsTab.Name = "CreditsTab"
 CreditsTab.Parent = Tabs
@@ -396,49 +490,49 @@ CreditsTab.BorderSizePixel = 0
 CreditsTab.Size = UDim2.new(0, 433, 0, 264)
 CreditsTab.Visible = false
 
-TextLabel_10.Parent = CreditsTab
-TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.BackgroundTransparency = 1.000
-TextLabel_10.BorderSizePixel = 0
-TextLabel_10.Position = UDim2.new(0, 0, 0.0719696954, 0)
-TextLabel_10.Size = UDim2.new(0, 433, 0, 50)
-TextLabel_10.Font = Enum.Font.GothamBlack
-TextLabel_10.Text = "CREDITS:"
-TextLabel_10.TextColor3 = Color3.fromRGB(232, 232, 232)
-TextLabel_10.TextSize = 25.000
-
-TextLabel_11.Parent = CreditsTab
-TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_11.BackgroundTransparency = 1.000
-TextLabel_11.BorderSizePixel = 0
-TextLabel_11.Position = UDim2.new(0, 0, 0.212121218, 0)
-TextLabel_11.Size = UDim2.new(0, 433, 0, 50)
-TextLabel_11.Font = Enum.Font.GothamBlack
-TextLabel_11.Text = "Scripting: Flights#4231 and Bible Bot (one part was skidded)"
-TextLabel_11.TextColor3 = Color3.fromRGB(232, 232, 232)
-TextLabel_11.TextSize = 14.000
-
 TextLabel_12.Parent = CreditsTab
 TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_12.BackgroundTransparency = 1.000
 TextLabel_12.BorderSizePixel = 0
-TextLabel_12.Position = UDim2.new(0, 0, 0.287878782, 0)
-TextLabel_12.Size = UDim2.new(0, 433, 0, 44)
+TextLabel_12.Position = UDim2.new(0, 0, 0.0719696954, 0)
+TextLabel_12.Size = UDim2.new(0, 433, 0, 50)
 TextLabel_12.Font = Enum.Font.GothamBlack
-TextLabel_12.Text = "GUI: Flights#4231 and Joshhh#7533 gave a lil bit of advice"
+TextLabel_12.Text = "CREDITS:"
 TextLabel_12.TextColor3 = Color3.fromRGB(232, 232, 232)
-TextLabel_12.TextSize = 14.000
+TextLabel_12.TextSize = 25.000
 
 TextLabel_13.Parent = CreditsTab
 TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_13.BackgroundTransparency = 1.000
 TextLabel_13.BorderSizePixel = 0
-TextLabel_13.Position = UDim2.new(0, 0, 0.397727281, 0)
-TextLabel_13.Size = UDim2.new(0, 433, 0, 31)
+TextLabel_13.Position = UDim2.new(0, 0, 0.212121218, 0)
+TextLabel_13.Size = UDim2.new(0, 433, 0, 50)
 TextLabel_13.Font = Enum.Font.GothamBlack
-TextLabel_13.Text = "Inspired by the Bible Bot"
+TextLabel_13.Text = "Scripting: Flights#4231 and Bible Bot (one part was skidded)"
 TextLabel_13.TextColor3 = Color3.fromRGB(232, 232, 232)
 TextLabel_13.TextSize = 14.000
+
+TextLabel_14.Parent = CreditsTab
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0, 0, 0.287878782, 0)
+TextLabel_14.Size = UDim2.new(0, 433, 0, 44)
+TextLabel_14.Font = Enum.Font.GothamBlack
+TextLabel_14.Text = "GUI: Flights#4231 and Joshhh#7533 gave a lil bit of advice"
+TextLabel_14.TextColor3 = Color3.fromRGB(232, 232, 232)
+TextLabel_14.TextSize = 14.000
+
+TextLabel_15.Parent = CreditsTab
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(0, 0, 0.397727281, 0)
+TextLabel_15.Size = UDim2.new(0, 433, 0, 31)
+TextLabel_15.Font = Enum.Font.GothamBlack
+TextLabel_15.Text = "Inspired by the Bible Bot"
+TextLabel_15.TextColor3 = Color3.fromRGB(232, 232, 232)
+TextLabel_15.TextSize = 14.000
 
 SocialsTab.Name = "SocialsTab"
 SocialsTab.Parent = Tabs
@@ -448,24 +542,24 @@ SocialsTab.BorderSizePixel = 0
 SocialsTab.Size = UDim2.new(0, 433, 0, 264)
 SocialsTab.Visible = false
 
-TextLabel_14.Parent = SocialsTab
-TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.BackgroundTransparency = 1.000
-TextLabel_14.BorderSizePixel = 0
-TextLabel_14.Position = UDim2.new(0, 0, 0.0719696954, 0)
-TextLabel_14.Size = UDim2.new(0, 433, 0, 50)
-TextLabel_14.Font = Enum.Font.GothamBlack
-TextLabel_14.Text = "SOCIALS:"
-TextLabel_14.TextColor3 = Color3.fromRGB(232, 232, 232)
-TextLabel_14.TextSize = 25.000
+TextLabel_16.Parent = SocialsTab
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(0, 0, 0.0719696954, 0)
+TextLabel_16.Size = UDim2.new(0, 433, 0, 50)
+TextLabel_16.Font = Enum.Font.GothamBlack
+TextLabel_16.Text = "SOCIALS:"
+TextLabel_16.TextColor3 = Color3.fromRGB(232, 232, 232)
+TextLabel_16.TextSize = 25.000
 
-TextLabel_15.Parent = SocialsTab
-TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_15.BackgroundTransparency = 1.000
-TextLabel_15.BorderSizePixel = 0
-TextLabel_15.Position = UDim2.new(0, 0, 0.212121218, 0)
-TextLabel_15.Size = UDim2.new(0, 433, 0, 50)
-TextLabel_15.Font = Enum.Font.GothamBlack
-TextLabel_15.Text = "Discord: https://discord.gg/ZaMmApH"
-TextLabel_15.TextColor3 = Color3.fromRGB(232, 232, 232)
-TextLabel_15.TextSize = 15.000
+TextLabel_17.Parent = SocialsTab
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(0, 0, 0.212121218, 0)
+TextLabel_17.Size = UDim2.new(0, 433, 0, 50)
+TextLabel_17.Font = Enum.Font.GothamBlack
+TextLabel_17.Text = "Discord: https://discord.gg/ZaMmApH"
+TextLabel_17.TextColor3 = Color3.fromRGB(232, 232, 232)
+TextLabel_17.TextSize = 15.000

@@ -127,7 +127,7 @@ commands.gay = function()
 end
 
 commands.help = function()
-    chat("!ask [Question] | !projectbot | !help | !edgyjoke | !fact | !ppsize | !discourd | !quote | !opinion | !dadjoke | !howgay | !flipacoin")
+    chat("!ask [Question] | !projectbot | !help | !edgyjoke | !fact | !ppsize | !discourd | !quote | !opinion | !dadjoke | !howgay | !flipacoin | !lovecalc [name] [name]")
     wait(0.5)
 end
 

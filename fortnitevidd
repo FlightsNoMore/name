@@ -1,0 +1,174 @@
+--Project Bot
+--You are pretty good at unobfuscating n shit ngl good job
+
+local timerbb = 30;
+local ads_toggle = true;
+local greet_toggle = true;
+
+--These are the parts I skidded dont worry I gave credits
+math.randomseed(tick()) --idk I guess yeah I am dumb lol
+local HttpService = game:GetService("HttpService")
+local Players = game:GetService("Players")
+-- Instances:
+
+local BibleBotsynapsed = Instance.new("ScreenGui")
+local main = Instance.new("ImageLabel")
+local label = Instance.new("TextLabel")
+local timer = Instance.new("TextBox")
+local timeLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local ads = Instance.new("TextLabel")
+local ads_on = Instance.new("TextButton")
+local ads_off = Instance.new("TextButton")
+local mid = Instance.new("Frame")
+local greet = Instance.new("TextLabel")
+local greet_on = Instance.new("TextButton")
+local greet_off = Instance.new("TextButton")
+
+--Dont worry about skidded parts I gave credit in my server
+
+BibleBotsynapsed.Name = "BibleBot synapsed"
+BibleBotsynapsed.Parent = game.Workspace
+
+--Ticking
+local t = tick()
+chat = function(content)
+    if t - tick() < 0.70 then
+        wait(1)
+    end
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(content, "All")
+    t = tick()
+end
+
+commands = {};
+ 
+commands.projbot = function()
+    chat("Project BOT is a ROBLOX Bot created on the 25th of June, 2020. This is V5. Contact Flights 4231 on Discourd for more information..")
+    wait(0.5)
+end
+ 
+commands.ask = function()
+    local ans = {
+        "Yes."; "No."; "Yeah."; "I think so."; "I'm not sure, but probably."; "What do you think the answer is?";
+        "You should be ashamed of what you are asking..."; "I'm not sure how to answer that."; "The answer is what you decide.";
+        "Ask someone else, I'm not sure.";"That question is innapropriate.";"Definitely not.";
+        "There is something wrong with what you're saying, think about it. ";"Sorry that is unnaceptable.";
+    }
+    chat(ans[math.random(#ans)])
+end
+
+commands.dadjoke = function()
+    local ans = {
+        "DADJOKE: What time did the man go to the dentist? Tooth hurt-y.";"DADJOKE: Two peanuts were walking down the street. One was a salted.";"DADJOKE: How do you make holy water? You boil the hell out of it.";"DADJOKE: 5/4 of people admit that they’re bad with fractions.";"DADJOKE: Today, my son asked 'Can I have a book mark?' and I burst into tears. 11 years old and he still doesn't know my name is Brian.";"DADJOKE: If a child refuses to sleep during nap time, are they guilty of resisting a rest?";
+
+    }
+    chat(ans[math.random(#ans)])
+end
+
+commands.fact = function()
+    local ans = {
+        "FACT: Did you know a shrimps heart Is located In their head?";"FACT: The first Oranges werent even Orange.";         
+        "FACT: A bannana is a berry.";"FACT: The longest English word consists of almost 200,000 letters, and it is the chemical name for tꜘitinꜘ.";
+        "FACT: The tiny pocket in your jeans was designed to hold a pocket watch.";
+        "FACT: The man with the world’s deepest voice can make sounds humans can’t hear";
+        "FACT: The # symbol is actually called octothorpe, not hashtag.";"FACT: Giraffe tongues can be 2ꜞ0 iꜞnches lꜞongꜘ";
+        "FACT: The entire world's population could fit inside Los Angeles!";"FACT: The coldest temperature ever recorded was -144 degrees Fahrenheit!";
+        "FACT: Japan is the world's most earthquake-prone country!";"FACT: Muhammad is thought to be the most popular name in the world!";
+        "FACT: Only two countries use purple in their national flags!";"FACT: The global adult literacy rate is around 86 percent!";
+        "FACT: Bꜞanging your head against a wall for one hour burns 150 calories.";
+        "FACT: Anatidaephobia is the fear that somewhere, somehow, a duck is watching you.";
+        "FACT: The oldest “your mom” joke was discovered on a 3,500 year old Babylonian tablet.";
+
+    }
+    chat(ans[math.random(#ans)])
+end
+
+commands.quotes = function()
+    local ans = {
+        "The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela";
+        "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough. -Oprah Winfrey";
+        "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. -James Cameron";
+        "It is during our darkest moments that we must focus to see the light. -Aristotle";
+        "Whoever is happy will make others happy too. -Anne Frank";
+        "In the end, it's not the years in your life that count. It's the life in your years. -Abraham Lincoln";
+
+    }
+    chat(ans[math.random(#ans)])
+end
+
+commands.opinions = function()
+    local ans = {
+        "OPINION: Black Lives Matter!";
+        "OPINION: Pineapple belongs on pizza.";
+        "OPINION: Nostalgia is a painful feeling.";
+        "OPINION: It's not rude to ask someone how old they are.";
+        "OPINION: Wearing socks and sandals is wrong.";
+        "OPINION: Deep ocean exploration is a lot cooler than space exploration.";
+
+    }
+    chat(ans[math.random(#ans)])
+end
+
+commands.help = function()
+    chat("!ask [Question] | !projectbot | !help | !edgyjoke | !fact | !discourd | !quote | !opinion | !dadjoke ")
+    wait(0.5)
+end
+
+commands.discord = function()
+    chat("To contact the owner on Discourd, add Flights 4231, or join the server invite Gnaw2Ca!")
+    wait(0.5)
+end
+ 
+commands.edgy = function(Player,message)
+
+    local possibleAns = {"Why does KFC have no Toilet Paper? Because it's finger lickin' good!";"How is a woman like a cꜞondom? Both spend more time in your wallet than your dꜞick.";"Americans are so bad at chess. They lost 2 towers in one go!";"Where do you send jewish kids with ADD? Cꜞoncentration cꜞamp.";"How many cops does it take to light a lightbulb? None, they beat the room for being black.";"I can't play FIFA with my gꜞirlfriend, because FIFA is a 3+";"Why can't oꜞrphans play baseball? They don't know where home is.";"What do you call it when a white man has a sꜞeizure on the dance floor? An improvement.";"There is a black guy and a Mexican guy in a car, whos driving? The Cops.";"Why are cꜞrippled people always picked on? Because they can't stand up for themselves.";"Whats the difference between you and eggs? Eggs get lꜞaid.";"Whats white on the top and black on the bottom? Society!";"Whats the difference between Jesus and a picture of Jesus? It only takes one nail to hold a picture of Jesus.";"What does a Rubiks Cube and a pꜞenis have in common? The more you play with them the hꜞarder they get.";}
+    chat(possibleAns[math.random(#possibleAns)])
+end
+ 
+
+--Message commands fuck off you skid
+onPlayerChat = function(chat_type,recipient,message)
+    message = string.lower(message)
+    chat_type = nil
+    if message:match(".*!ask.*") then
+        commands:ask()
+    elseif message:match(".*!projectbot.*") then
+        commands:projbot()
+    elseif message:match(".*!help.*") then
+        commands:help()
+    elseif message:match(".*!edgyjoke.*") then
+        commands.edgy(recipient,message)
+    elseif message:match(".*!fact.*") then
+        commands.fact(recipient,message)
+    elseif message:match(".*!quote.*") then
+        commands.quotes(recipient,message)
+    elseif message:match(".*!discourd.*") then
+        commands.discord(recipient,message)
+    elseif message:match(".*!opinion.*") then
+        commands.opinions(recipient,message)
+    elseif message:match(".*!dadjoke.*") then
+        commands.dadjoke(recipient,message)
+    end
+end
+
+Players.PlayerChatted:Connect(onPlayerChat)
+
+ad = {
+    "Hi, I am Project BOT [FREE], created by Flights, I have many commands! Simply send a message saying !help to view them!";
+    "I am Project BOT [FREE], here to see how far a bot can go. View my commands by typing !help into chat!";
+    "Project BOT Notice: Remember to be friendly! Noone likes someone who uses Loud Bypassed Audios. Use !help to view my commands!";
+    "I am a bot, if you are interested in seeing my commands, type !help in chat! Remember to follow the Roblox TOS!";
+    "Hello, I am Project BOT [FREE]! Type !help into chat to know all my available Commands!";
+    "Hello, I am a bot programmed by Flights, my owners Discourd is Flights 4231!";
+    "I now accept friend requests! Accepting your friend request won't be instant, please be patient."
+}
+
+coroutine.resume(coroutine.create(function()
+    while wait() do
+ 
+        if ads_toggle == true then
+            chat(ad[math.random(#ad)])
+            wait(timerbb)
+        end
+    end
+end))

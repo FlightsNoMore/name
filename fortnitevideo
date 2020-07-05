@@ -77,10 +77,10 @@ end
 commands.fact = function()
     local ans = {
         "FACT: Did you know a shrimps heart Is located In their head?";"FACT: The first Oranges werent even Orange.";         
-        "FACT: A bannana is a berry.";"FACT: The longest English word consists of almost 200,000 letters, and it is the chemical name for tꜘitinꜘ.";
+        "FACT: A bannana is a berry.";"FACT: The longest English word consists of almost 200,000 letters, and it is the chemical name for tꜞitin.";
         "FACT: The tiny pocket in your jeans was designed to hold a pocket watch.";
         "FACT: The man with the world’s deepest voice can make sounds humans can’t hear";
-        "FACT: The # symbol is actually called octothorpe, not hashtag.";"FACT: Giraffe tongues can be 2ꜞ0 iꜞnches lꜞongꜘ";
+        "FACT: The # symbol is actually called octothorpe, not hashtag.";"FACT: Giraffe tongues can be 2ꜞ0 iꜞnches lꜞong";
         "FACT: The entire world's population could fit inside Los Angeles!";"FACT: The coldest temperature ever recorded was -144 degrees Fahrenheit!";
         "FACT: Japan is the world's most earthquake-prone country!";"FACT: Muhammad is thought to be the most popular name in the world!";
         "FACT: Only two countries use purple in their national flags!";"FACT: The global adult literacy rate is around 86 percent!";

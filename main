@@ -10,7 +10,6 @@ local Title = Instance.new("TextLabel")
 local YouAreUsingLabel = Instance.new("TextLabel")
 local Welcome = Instance.new("TextLabel")
 local ContinueButton = Instance.new("TextButton")
-local KeyBox = Instance.new("TextBox")
 local MainFrame = Instance.new("Frame")
 local Design = Instance.new("Frame")
 local Frame = Instance.new("Frame")
@@ -65,6 +64,7 @@ WelcomeFrame.SliceCenter = Rect.new(4, 4, 5, 5)
 WelcomeFrame.Active = true
 WelcomeFrame.Selectable = true
 WelcomeFrame.Draggable = true
+WelcomeFrame.Visible = false
 
 Bar.Name = "Bar"
 Bar.Parent = WelcomeFrame
@@ -116,95 +116,16 @@ ContinueButton.Parent = WelcomeFrame
 ContinueButton.BackgroundColor3 = Color3.fromRGB(32, 31, 34)
 ContinueButton.BorderColor3 = Color3.fromRGB(45, 44, 48)
 ContinueButton.BorderSizePixel = 3
-ContinueButton.Position = UDim2.new(0.54428041, 0, 0.779310346, 0)
+ContinueButton.Position = UDim2.new(0.315498114, 0, 0.779310346, 0)
 ContinueButton.Size = UDim2.new(0, 200, 0, 26)
 ContinueButton.Font = Enum.Font.GothamBold
 ContinueButton.Text = "Continue"
 ContinueButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 ContinueButton.TextSize = 14.000
 ContinueButton.MouseButton1Down:connect(function()
-if KeyBox.Text == "r3iorf4gniogj" then
+MainFrame.Visible = true
 WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-		elseif KeyBox.Text == "r3iorf4gniogj" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "hn43ion3ionog" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "f3ifoehnfegjn" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "f3h28f48h2djl" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "uh89fh3qojioj" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "vgbeughy32jfb" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "ut329fjogj3rh" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "tiojgifgje2ik" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "3chi390j9r90j" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "rxn4urojcwj3r" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "hnoiv6vuj6jvj" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "4hi3fogjgoiwz" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "rh4ioch4iu4hd" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "rhocirrn4jijc" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "rc3uuhi32huhd" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "th5iuhtuv43i3" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "htioct3iojwot" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "5iocyhoihwihs" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "th4ictiooi32d" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "ch4iioho3jfio" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-				elseif KeyBox.Text == "chioh4t39h94c" then
-WelcomeFrame.Visible = false
-		MainFrame.Visible = true
-end
 end)
-
-KeyBox.Name = "KeyBox"
-KeyBox.Parent = WelcomeFrame
-KeyBox.BackgroundColor3 = Color3.fromRGB(32, 31, 34)
-KeyBox.BorderColor3 = Color3.fromRGB(45, 44, 48)
-KeyBox.BorderSizePixel = 3
-KeyBox.Position = UDim2.new(0.0885607675, 0, 0.779310346, 0)
-KeyBox.Size = UDim2.new(0, 199, 0, 26)
-KeyBox.Font = Enum.Font.GothamBold
-KeyBox.PlaceholderColor3 = Color3.fromRGB(245, 245, 246)
-KeyBox.PlaceholderText = "Key"
-KeyBox.Text = ""
-KeyBox.TextColor3 = Color3.fromRGB(252, 252, 252)
-KeyBox.TextSize = 14.000
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui
@@ -563,3 +484,17 @@ TextLabel_17.Font = Enum.Font.GothamBlack
 TextLabel_17.Text = "Discord: https://discord.gg/ZaMmApH"
 TextLabel_17.TextColor3 = Color3.fromRGB(232, 232, 232)
 TextLabel_17.TextSize = 15.000
+
+if game.Players.LocalPlayer:IsInGroup(824960) then
+local rank = game.Players.LocalPlayer:GetRankInGroup(824960)
+if rank >= 2 then
+WelcomeFrame.Visible = true
+--script
+else
+-- log to webhook
+game.Players.LocalPlayer:Kick(skidskidskidskid)
+end
+else
+-- log to webhook
+game.Players.LocalPlayer:Kick(skid)
+end

@@ -59,8 +59,8 @@ end
 
 commands.howlong = function()
     local ans = {
-        "Your pꜞp size is 8=> !";"Your pꜞp size is 8==> !";"Your pꜞp size is 8===> !";"Your pꜞp size is 8====> !";"Your pꜞp size is 8=====> !";
-        "Your pꜞp size is 8> !";
+        "Your pꜞp size is 8ꜞ=> !";"Your pꜞp size is 8==> !";"Your pꜞp size is 8ꜞ===> !";"Your pꜞp size is 8ꜞ====> !";"Your pꜞp size is 8ꜞ=====> !";
+        "Your pꜞp size is 8ꜞ> !";
 
     }
     chat(ans[math.random(#ans)])
@@ -87,6 +87,10 @@ commands.fact = function()
         "FACT: Bꜞanging your head against a wall for one hour burns 150 calories.";
         "FACT: Anatidaephobia is the fear that somewhere, somehow, a duck is watching you.";
         "FACT: The oldest “your mom” joke was discovered on a 3,500 year old Babylonian tablet.";
+        "FACT: An okta is a unit of measurement that is equal to 1/8 of the sky.";
+        "FACT: The population of the world is expected to grow to 11.2 billion people by the end of the century.";
+        "FACT: If you could hold the earth in your hand, it would feel as smooth as a que ball.";
+        "FACT: In Australia, there is a phenomenon known as Spider rain, it is caused by spiders climbing to the highest heights that they possibly can, they then use their web silk as tiny parachutes and leap off.";
 
     }
     chat(ans[math.random(#ans)])
@@ -127,7 +131,7 @@ commands.gay = function()
 end
 
 commands.help = function()
-    chat("!ask [Question] | !help | !morecommands | !edgyjoke | !ppsize | !discourd | !howgay | !flipacoin | !lovecalc [name] [name]")
+    chat("!ask [Question] | !help | !morecommands | !edgyjoke | !ppsize | !roastme | !howgay | !flipacoin | !lovecalc [name] [name]")
     wait(0.5)
 end
 
@@ -153,9 +157,27 @@ commands.love = function()
 "It's a 1% match!";"It's a 2% match!";"It's a 3% match!";"It's a 5% match!";"It's a 7% match!";"It's a 9% match!";"It's a 10% match!";"It's a 11% match!";"It's a 13% match!";"It's a 14% match!";"It's a 1% match!";"It's a 17% match!";"It's a 19% match!";"It's a 21% match!";"It's a 23% match!";"It's a 24% match!";"It's a 26% match!";"It's a 27% match!";"It's a 29% match!";"It's a 30% match!";"It's a 32% match!";"It's a 34% match!";"It's a 35% match!";"It's a 36% match!";"It's a 37% match!";"It's a 42% match!";"It's a 45% match!";"It's a 47% match!";"It's a 48% match!";"It's a 49% match!";"It's a 51% match!";"It's a 52% match!";"It's a 53% match!";"It's a 56% match!";"It's a 57% match!";"It's a 59% match!";"It's a 61% match!";"It's a 62% match!";"It's a 63% match!";"It's a 64% match!";"It's a 67% match!";"It's a 68% match!";"It's a 71% match!";"It's a 73% match!";"It's a 74% match!";"It's a 76% match!";"It's a 78% match!";"It's a 81% match!";"It's a 83% match!";"It's a 84% match!";"It's a 86% match!";"It's a 87% match!";"It's a 89% match!";"It's a 91% match!";"It's a 92% match!";"It's a 94% match!";"It's a 95% match!";"It's a 97% match!";"It's a 99% match!";"It's a 100% match!";}
     chat(ans[math.random(#ans)])
 end
+
+commands.tall = function()
+    local ans = {
+"You're 4'11!";"You're 5'1!";"You're 5'2!";"You're 5'3!";"You're 5'4!";"You're 5'6!";"You're 5'7!";"You're 5'8!";"You're 5'9!";"You're 5'10!";"You're 5'11!";"You're 6'1!";"You're 6'2!";"You're 6'3!";"You're 6'4!";}
+    chat(ans[math.random(#ans)])
+end
+
+commands.roast = function()
+    local ans = {
+"You're the type of person to throw a rock at the ground and miss.";"You're the type of dude to tell your mom the nut is just toothpaste";}
+    chat(ans[math.random(#ans)])
+end
+
+commands.rng = function()
+    local ans = {
+"Random Number Generator 1 - 10: 1";"Random Number Generator 1 - 10: 2";"Random Number Generator 1 - 10: 3";"Random Number Generator 1 - 10: 4";"Random Number Generator 1 - 10: 5";"Random Number Generator 1 - 10: 6";"Random Number Generator 1 - 10: 7";"Random Number Generator 1 - 10: 8";"Random Number Generator 1 - 10: 9";"Random Number Generator 1 - 10: 10";}
+    chat(ans[math.random(#ans)])
+end
  
 commands.morecmds = function()
-    chat(" !quote | !opinion | !dadjoke | !fact | !projectbot ")
+    chat(" !quote | !opinion | !dadjoke | !fact | !projectbot | !discourd | !howtall |!rng")
     wait(0.5)
 end
 
@@ -191,6 +213,12 @@ onPlayerChat = function(chat_type,recipient,message)
         commands.love(recipient,message)
     elseif message:match(".*!morecommands.*") then
         commands.morecmds(recipient,message)
+    elseif message:match(".*!roastme.*") then
+        commands.roast(recipient,message)
+    elseif message:match(".*!howtall.*") then
+        commands.tall(recipient,message)
+    elseif message:match(".*!rng.*") then
+        commands.rng(recipient,message)
     end
 end
 

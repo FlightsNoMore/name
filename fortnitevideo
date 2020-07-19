@@ -59,8 +59,8 @@ end
 
 commands.howlong = function()
     local ans = {
-        "Your pꜞp size is 8ꜞ=> !";"Your pꜞp size is 8==> !";"Your pꜞp size is 8ꜞ===> !";"Your pꜞp size is 8ꜞ====> !";"Your pꜞp size is 8ꜞ=====> !";
-        "Your pꜞp size is 8ꜞ> !";
+        "Your pꜞp size is 8⇌> !";"Your pꜞp size is 8⇌⇌> !";"Your pꜞp size is 8⇌⇌⇌> !";"Your pꜞp size is 8⇌⇌⇌⇌> !";"Your pꜞp size is 8⇌⇌⇌⇌⇌> !";
+        "Your pꜞp size is 8> !";
 
     }
     chat(ans[math.random(#ans)])
